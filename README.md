@@ -7,7 +7,7 @@ I generally prefer using transform.Find(), which is not as expensive as GameObje
 Transform.Find() however returns only the immediate children of the GameObject.transform and cannot go inside its successors.
 This extension method uses BFS/DFS technique to traverse through all the successors of a given GameObject transform and return the needed transform
 
-   //The recursive definition of DFS and BFS
+
      //Breadth-first search
       //Prefer this method over the other!!!
       public static Transform FindDeepChildBFS(this Transform parent, string name) {
